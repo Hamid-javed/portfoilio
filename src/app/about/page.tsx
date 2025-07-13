@@ -43,8 +43,8 @@ import { TbTerminal2 } from "react-icons/tb";
 const CONTACT_LINKS = [
   {
     name: "Email",
-    content: "abhijitzende75@gmail",
-    href: "mailto:abhijitzende75@gmail.com",
+    content: "hamidjaved615@gmail.com",
+    href: "mailto:hamidjaved615@gmail.com",
     icon: <FaEnvelope height={"50px"} />,
   },
   {
@@ -55,14 +55,14 @@ const CONTACT_LINKS = [
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/zende-abhijit/",
-    content: "/zende-abhijit",
+    href: "https://www.linkedin.com/in/hamid-javed-3b3990327/",
+    content: "/hamid-javed",
     icon: <FaLinkedin height={"50px"} />,
   },
   {
     name: "GitHub",
     href: "https://github.com/Abhiz2411",
-    content: "/naresh-khatri",
+    content: "/Hamid-Javed",
     icon: <FaGithub height={"50px"} />,
   },
 ];
@@ -170,12 +170,12 @@ const TOOLS = [
     icon: <SiVisualstudiocode size={"50px"} color="#007acc" />,
     color: "#007acc",
   },
-  {
-    name: "VIM",
-    content: "Next.js is a React framework for production",
-    icon: <DiVim size={"50px"} color="#fff" />,
-    color: "#000000",
-  },
+  // {
+  //   name: "VIM",
+  //   content: "Next.js is a React framework for production",
+  //   icon: <DiVim size={"50px"} color="#fff" />,
+  //   color: "#000000",
+  // },
   {
     name: "Prettier",
     content: "Next.js is a React framework for production",
@@ -207,7 +207,7 @@ const TOOLS = [
     color: "#000000",
   },
   {
-    name: "Kubuntu",
+    name: "Ubuntu",
     content: "Next.js is a React framework for production",
     // give me correct color for  kubuntu
     icon: <SiKubuntu size={"50px"} color="#0077C4" />,
@@ -287,12 +287,16 @@ function Page() {
           >
             <h1 className="text-3xl mb-10 lg:md-20">About me</h1>
             <p className="mb-10 text-roboto">
-              Hey there! I&apos;m Abhijit, a Comp. Sci. Engineer with 1.5 year
-              experience in Devlopment, DevOps and Database management with
-              hands-on experience in deploying & automating workflows, and
-              collaborating with foreign clients. Strong analytical
-              skills,effective communication, and a team-oriented approach to
-              driving process improvements and delivering results.
+              I am a proficient MERN Stack Developer skilled in creating dynamic
+              and responsive web applications. My expertise spans React.js,
+              Node.js, Express.js, and MongoDB, enabling me to build and
+              optimize user-focused solutions. I have integrated third-party
+              APIs and follow clean, efficient coding practices. Additionally,
+              I’m experienced in deploying applications on platforms like
+              Vercel, Netlify, and AWS EC2, and have worked with basic DevOps
+              tools including GitHub Actions and Jenkins for CI/CD automation.
+              I’m passionate about learning new technologies to solve complex
+              problems effectively.
             </p>
             <p className="mb-10">
               When I&apos;m not coding, you can find me [Your
