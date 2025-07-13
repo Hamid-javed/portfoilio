@@ -1113,13 +1113,13 @@ const projects: Project[] = [
             live="https://elearnportal.uno/login"
             repo="https://github.com/Hamid-javed/E-learn-frontend.git"
           />
-          <SlideShow
+          {/* <SlideShow
             images={[
               `${BASE_PATH}/aidockerfileoptimizer/1.png`,
               `${BASE_PATH}/aidockerfileoptimizer/2.png`,
               `${BASE_PATH}/aidockerfileoptimizer/3.png`,
             ]}
-          />
+          /> */}
         </div>
       );
     },
@@ -1159,12 +1159,12 @@ const projects: Project[] = [
           <p className="font-mono mb-2">
             Jenkins, Docker, EC2, Terraform, and Ansible used for automation.
           </p> */}
-          <SlideShow
+          {/* <SlideShow
             images={[
               `${BASE_PATH}/financeme/1.png`,
               `${BASE_PATH}/financeme/2.png`,
             ]}
-          />
+          /> */}
           {/* <TypographyH3 className="my-4 mt-8">Monitoring</TypographyH3>
           <p className="font-mono mb-2">
             Real-time metrics using Node Exporter + Prometheus + Grafana.
@@ -1209,23 +1209,23 @@ const projects: Project[] = [
             sharing files securely.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <SlideShow
+          {/* <SlideShow
             images={[
               `${BASE_PATH}/myportfolio/landing.png`,
               `${BASE_PATH}/portfolio/skills.png`,
             ]}
-          />
+          /> */}
           <TypographyH3 className="my-4 mt-8">Showcase</TypographyH3>
           <p className="font-mono mb-2">
             Explore featured work in an immersive UI experience using Spline and
             Framer Motion.
           </p>
-          <SlideShow
+          {/* <SlideShow
             images={[
               `${BASE_PATH}/myportfolio/projects.png`,
               `${BASE_PATH}/myportfolio/project.png`,
             ]}
-          />
+          /> */}
         </div>
       );
     },
@@ -1261,13 +1261,13 @@ const projects: Project[] = [
             includes Tailwind CSS, CSS, React.js, and other libraries.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <SlideShow
+          {/* <SlideShow
             images={[
               `${BASE_PATH}/smartparkingassitant/01.jpeg`,
               `${BASE_PATH}/smartparkingassitant/03.png`,
               `${BASE_PATH}/smartparkingassitant/04.jpg`,
             ]}
-          />
+          /> */}
         </div>
       );
     },
@@ -1300,13 +1300,13 @@ const projects: Project[] = [
             user experience.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <SlideShow
+          {/* <SlideShow
             images={[
               `${BASE_PATH}/savinderpuriportfolio/01.png`,
               `${BASE_PATH}/savinderpuriportfolio/02.png`,
               `${BASE_PATH}/savinderpuriportfolio/03.png`,
             ]}
-          />
+          /> */}
         </div>
       );
     },
