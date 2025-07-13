@@ -13,6 +13,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { config } from "@/data/config";
 const ContactSection = () => {
+  console.log("object");
   return (
     <section id="contact" className="min-h-screen max-w-7xl mx-auto ">
       <Link href={"#contact"}>
@@ -35,10 +36,10 @@ const ContactSection = () => {
               Please contact me directly at{" "}
               <a
                 target="_blank"
-                href={`mailto:${config.email}`}
+                href={`mailto:${config?.email}`}
                 className="text-gray-200 cursor-can-hover rounded-lg"
               >
-                {config.email.replace(/@/g, "(at)")}
+                {config?.email.replace(/@/g, "(at)")}
               </a>{" "}
               or drop your info here.
             </CardDescription>

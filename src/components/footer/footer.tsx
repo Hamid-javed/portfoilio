@@ -14,7 +14,7 @@ function Footer() {
       </p>
       <SocialMediaButtons />
       <nav className="flex gap-4 sm:gap-6 z-10">
-        {footer.map((link, index) => {
+        {/* {footer.map((link, index) => {
           const { title, href } = link;
 
           return (
@@ -26,7 +26,8 @@ function Footer() {
               <Button variant={"link"}>{title}</Button>
             </Link>
           );
-        })}
+        })} */}
+        Made with ❤️
       </nav>
     </footer>
   );

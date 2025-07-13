@@ -21,34 +21,39 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
+
     try {
-      const res = await fetch("/api/send", {
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          fullName,
-          email,
-          message,
+          access_key: "236aca85-7afd-4ecd-a803-720755f2eecc",
+          name: fullName,
+          email: email,
+          message: message,
         }),
       });
+
       const data = await res.json();
-      if (data.error) throw new Error(data.error);
-      toast({
-        title: "Thank you!",
-        description: "I'll get back to you as soon as possible.",
-        variant: "default",
-        className: cn("top-0 mx-auto flex fixed md:top-4 md:right-4"),
-      });
-      setLoading(false);
-      setFullName("");
-      setEmail("");
-      setMessage("");
-      const timer = setTimeout(() => {
-        router.push("/");
-        clearTimeout(timer);
-      }, 1000);
+
+      if (data.success) {
+        toast({
+          title: "Thank you!",
+          description: "I'll get back to you as soon as possible.",
+          variant: "default",
+          className: cn("top-0 mx-auto flex fixed md:top-4 md:right-4"),
+        });
+        setFullName("");
+        setEmail("");
+        setMessage("");
+        setTimeout(() => {
+          router.push("/");
+        }, 1000);
+      } else {
+        throw new Error(data.message || "Submission failed");
+      }
     } catch (err) {
       toast({
         title: "Error",
@@ -61,6 +66,7 @@ const ContactForm = () => {
     }
     setLoading(false);
   };
+
   return (
     <form className="min-w-7xl mx-auto sm:mt-4" onSubmit={handleSubmit}>
       <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">

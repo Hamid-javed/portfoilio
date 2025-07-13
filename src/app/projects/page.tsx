@@ -5,77 +5,68 @@ import React from "react";
 // @ts-ignore
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css/core";
-
 import "@splidejs/react-splide/css";
+import Elearn from "./../assets/portfolioImages/elearn.png";
+import LinkUp from "./../assets/portfolioImages/linkup.png";
+import Soicalmedia from "./../assets/portfolioImages/socialmedia.png";
+import DemoPortfolio from "./../assets/portfolioImages/demo-profolio.png";
+import ElarnAdmin from "./../assets/portfolioImages/E-learn-admin.png";
+import ChatBot from "./../assets/portfolioImages/chatbot.png";
+import NeuroMail from "./../assets/portfolioImages/NeuroMail.png";
+import neuroDrive from "./../assets/portfolioImages/neuroDrive.png";
 
 const PROJECTS = [
   {
     id: 1,
-    name: "AI Dockerfile optimizer",
-    description: `AI-Docker-file-optimizer helps optimize Dockerfiles for smaller, more efficient images. 
-            Simply paste your Dockerfile, and the app analyzes it for best practices and size 
-            optimization tips. It then provides a refactored, optimized version of the Dockerfile. 
-            Deployed on Vercel, it ensures fast and easy access to Dockerfile optimization..`,
-    link: "https://ai-docker-file-optimizer.netlify.app/",
-    images: [
-      "/assets/projects-screenshots/aidockerfileoptimizer/1.png",
-      "/assets/projects-screenshots/aidockerfileoptimizer/2.png",
-      "/assets/projects-screenshots/aidockerfileoptimizer/3.png",
-    ],
+    name: "Project E-Learning",
+    description: `Developed a full-stack learning platform where users can browse and access courses uploaded by mentors. Built with React.js, Node.js, and MongoDB Atlas, the platform is responsive (Tailwind CSS) and optimized for user experience.`,
+    link: "https://elearnportal.uno/login",
+    images: [Elearn, Elearn, Elearn],
   },
   {
     id: 2,
-    name: "financeme",
-    description: `This project demonstrates the deployment of a DevOps pipeline for a global banking and
-            financial services provider, FinanceMe. The company transitioned from a monolithic 
-            architecture to a microservice-based architecture to handle increased traffic and 
-            scaling challenges. The project involves automating infrastructure provisioning, build 
-            and deployment processes, and continuous monitoring using modern DevOps tools and 
-            AWS services.?`,
-    link: "https://github.com/Abhiz2411/FinanceMe-Devops-Project-01",
-    images: [
-      "/assets/projects-screenshots/financeme/1.png",
-      "/assets/projects-screenshots/financeme/2.png",
-      "/assets/projects-screenshots/financeme/3.png",
-      "/assets/projects-screenshots/financeme/4.png",
-      "/assets/projects-screenshots/financeme/5.png",
-      "/assets/projects-screenshots/financeme/6.png",
-      "/assets/projects-screenshots/financeme/7.png",
-      "/assets/projects-screenshots/financeme/8.png",
-      "/assets/projects-screenshots/financeme/9.png",
-      "/assets/projects-screenshots/financeme/10.png"
-    ],
+    name: "Neuromail - Gmail Alternative",
+    description: `Neuromail is a Gmail-like email platform built with React.js and Tailwind CSS. It supports mobile-first design, RESTful API integration, and is deployed for fast, cloud-based usage.`,
+    link: "https://mailing.neuromail.digital/",
+    images: [NeuroMail, NeuroMail, NeuroMail],
   },
   {
     id: 3,
-    name: "Portfolio",
-    description: `Welcome to my digital playground, where creativity meets code in the
-            dopest way possible.`,
-    link: "https://www.abhijitzende.com/",
-    images: [
-      "/assets/projects-screenshots/myportfolio/landing.png",
-      "/assets/projects-screenshots/myportfolio/navbar.png",
-      "/assets/projects-screenshots/myportfolio/projects.png",
-      "/assets/projects-screenshots/myportfolio/project.png",
-    ],
+    name: "NeuroDrive - Secure Cloud Storage",
+    description: `NeuroDrive is a Google Drive alternative that features file encryption, password-protected sharing, and in-browser PDF/Doc editing. Frontend built in React.js with Tailwind CSS.`,
+    link: "https://dashboard.neurodrive.me/",
+    images: [neuroDrive, neuroDrive, neuroDrive],
   },
   {
     id: 4,
-    name: "Smart Parking Assistant",
-    description: `Transform parking with the Smart Parking Assistant, an IoT marvel powered by Arduino 
-            and IR sensors to detect and recommend the best spots in real-time. Enjoy a sleek GUI 
-            that visualizes availability and an intelligent system for quick, optimal decisions. 
-            Built to adapt with customizable hardware and Python-powered software for seamless 
-            integration. Say goodbye to parking woes and hello to smarter space utilization!`,
-    link: "https://github.com/Abhiz2411/smart-parking-assistant",
-    images: [
-      "/assets/projects-screenshots/smartparkingassitant/01.jpeg",
-      "/assets/projects-screenshots/smartparkingassitant/03.jpeg",
-      "/assets/projects-screenshots/smartparkingassitant/04.jpeg",
-
-    ],
+    name: "E-Learning Admin Panel",
+    description: `Admin panel for managing courses, mentors, users, and platform analytics. Fully responsive, built using HTML5, CSS3, JavaScript, and Tailwind CSS.`,
+    link: "https://e-learn-admin.netlify.app/",
+    images: [ElarnAdmin, ElarnAdmin, ElarnAdmin],
+  },
+  {
+    id: 5,
+    name: "ChatBot (AI)",
+    description: `Real-time AI chatbot built with Vite and TypeScript. Integrates NLP APIs, responsive design, and state management for interactive, intelligent conversations.`,
+    link: "https://hamids-chatbot.netlify.app/",
+    images: [ChatBot, ChatBot, ChatBot],
+  },
+  {
+    id: 6,
+    name: "Link Up Landing Page",
+    description: `Landing page for a social media platform built with React.js and Tailwind CSS from Figma designs. Fully responsive with clean layout and animations.`,
+    link: "https://link-upsocial.netlify.app/",
+    images: [LinkUp, LinkUp, LinkUp],
+  },
+  {
+    id: 7,
+    name: "Social Media Backend",
+    description: `RESTful API backend for a full-fledged social media platform built with Node.js and MongoDB. Supports authentication, posts, likes, comments, notifications, and chat system.`,
+    link: "https://github.com/Hamid-javed/link-up.git",
+    images: [Soicalmedia, Soicalmedia, Soicalmedia],
   },
 ];
+
 function Page() {
   return (
     <>
