@@ -6,14 +6,13 @@ import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css/core";
 import "@splidejs/react-splide/css";
-import Elearn from "./../assets/portfolioImages/elearn.png";
-import LinkUp from "./../assets/portfolioImages/linkup.png";
-import Soicalmedia from "./../assets/portfolioImages/socialmedia.png";
-import DemoPortfolio from "./../assets/portfolioImages/demo-profolio.png";
-import ElarnAdmin from "./../assets/portfolioImages/E-learn-admin.png";
-import ChatBot from "./../assets/portfolioImages/chatbot.png";
-import NeuroMail from "./../assets/portfolioImages/NeuroMail.png";
-import neuroDrive from "./../assets/portfolioImages/neuroDrive.png";
+import Elearn from "./../assets/elearn.png";
+import LinkUp from "./../assets/linkup.png";
+import Soicalmedia from "./../assets/socialmedia.png";
+import ElarnAdmin from "./../assets/E-learn-admin.png";
+import ChatBot from "./../assets/chatbot.png";
+import NeuroMail from "./../assets/NeuroMail.png";
+import neuroDrive from "./../assets/neuroDrive.png";
 
 const PROJECTS = [
   {
